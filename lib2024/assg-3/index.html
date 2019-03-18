@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Registration Form</title>
+		<link rel="stylesheet"
+		href="style.css" />
+		<style>
+		h1 {
+
+			color:green; font size: 40px; font-family:"Ariel, Helevica", sans-serif; 
+		}
+
+		body {
+			background-color: "LightGray"; 	
+
+		}
+
+		</style>
+	
+
+<!--This is an Elite Sports Registration form!!-->
+		
+	</head>
+	<body>
+		<h1>Elite Sports Camp Registration Form</h1>
+			<div=class="wrapper">
+	 	<section>
+	 		<form id="htmlForm" action="somephppage.php" method="get">
+        	</div>
+<!--This is a box with the first name-->
+		<h3>*is required</h3>
+			<div id="fn-container" class="form-elm">
+				<label for="FirstName">First Name*:</label> 
+				<input type="text" name="FirstName" id="FirstName" placeholder="FirstName" required="FirstName"> 
+			</div>
+				<br>
+<!--This is box with the last name-->
+			<div id="In-container" class="form-elm">
+				<label for="LastName">Last Name*:</label>
+				<input type="text" name="LastName" id="LastName" placeholder="LastName" required="LastName">
+			</div>
+			<br>
+<!--This box contains an email-->
+			<div id="email-container" class="form-elm">
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" placeholder="Email" readonly>
+			</div>
+			<br>
+<!--This is the password-->
+			<div id="pass-container" class="form-elm">
+				<label for="pass">Password*:</label>
+				<input type="password" name="pass" id="pass" required="password">
+			</div>
+			<br>
+<!--This area is for the introductory text- I labeled it bio-->
+	        <div id="bio-container" class="form-elm">
+				<label for="bio">Player Bio:</label>
+				<textarea id="bio" name="bio" col="40" rows="8" class="field-large"></textarea>
+			</div>
+			<br>
+<!--Date area-->
+		<fieldset>
+			<div id="date-container" class="form-elm">
+				<label for="date"> Minor's Date of Birth*:</label>
+				<input type="date" name="date" id="date" placeholder="DateofBirth" required="date">
+			<br>
+<!--Number of Players Area-->
+				<label for="number">Select Number of Players:</label>
+				<input type="number" id="number" name="number" min="0" max="20">
+			<br>
+<!--Phone Number area-->
+				<label for="cellPhone">Cell Number*:</label>
+				<input type="tel" id="phone" name="phone" class="field- large" placeholder="xxx-xxx-xxxx" pattern="/d{3}-/d{3}-/d{4}" required="phone">
+				</div>
+			<br>
+		</fieldset>
+<!--Gender-->
+			<div id="radio-container" class="form-elm">
+				<p>Gender:</p>
+				<label for="male">
+				<input type="radio" name="gender" id="male" value="male">
+						Male
+				</label>
+				<label for="female">
+				<input type="radio" name="gender" id="famale" value="female">
+						Female
+				</label>
+				<label for="gender neutral">
+				<input type="radio" name="gender" id="genderneutral" value="genderneutral" checked>
+						Gender-Neutral
+				</label>
+				<label for="prefer-not-to-say">
+				<input type="radio" name="gender" id="prefernottosay" value="prefernottosay">
+						Prefer Not to Say
+				</label>
+			</div>
+			<br>
+<!-- Street Address-->
+			<div id="address-container" class="form-elm">
+				<label for="streetAddress">Street Address:</label>
+				<input type="input" name="streetaddress"id="streetaddress" placeholder="StreetAddress">
+			</div>
+			<br>
+<!--Postal Code-->
+			<div id="postal-code-container" class="form-elm">
+				<label for="postalCode">Postal Code:</label>
+					<input type="text" name="postalcode" id="postalcode"
+					placeholder="PostalCode">
+			</div> 
+			<br>	
+<!--City-->	
+			<div id="city-container" class="form=elm">
+				<label for="city">City:</label>
+				<input type="text" name="city" id="city" placeholder="City">
+			</div>
+			<br>
+<!--Province-->
+			<div id="province-drop-container" class="form-elm">
+				<label for="province">Province:</label>
+				<select name="province" id="province">
+					<optgroup label="province">
+						<option value="on" selected>Ontario</option>
+						<option value="qu">Quebec</option>
+						<option value="al">Alberta</option>
+						<option value="bc">British Columbia</option>
+						<option value="ma">Manitiba</option>
+						<option value="ne">New Brunswick</option>
+						<option value="ne">Newfoundland and Labrador</option>
+						<option value="no">Northwest Territories</option>
+						<option value="pi">Prince Edward Island</option>
+						<option value="sa">Saskatchewan</option>
+						<option value="no">Nova Scotia</option>
+						<option value="nu">Nunvut</option>
+						<option value="yu">Yukon</option>
+					</optgroup>
+				</select>
+			</div>
+			<br>
+<!--Country-->
+			<div id="country-drop-container" class="form-elm">
+				<label for="country">Country:</label>
+				<select name="country" id="country">
+					<optgroup label="country">
+						<option value="ca">Canada</option>
+						<option value="ot">Other</option>
+					</optgroup>
+				</select>
+			</div>
+			<br>
+<!--Hobbies and Interests-->
+		<fieldset>
+			 <div>
+				<legend>Hobbies and Interests:</legend>
+				<label for="soccer">Soccer: <input type="checkbox" name="soccer" id="soccer"></label><br>
+				<label for="hockey">Hockey: <input type="checkbox" name="hockey" id="hockey" checked></label><br>
+				<label for="football">Football: <input type="checkbox" name="football" id="football"></label><br>
+				<label for="golf">Golf: <input type="checkbox" name="golf" id="golf"></label><br>
+				<label for="swimming">Swimming: <input type="checkbox" name="swimming" id="swimming"></label><br>
+				<label for="Basketball">Basketball: <input type="checkbox" name="basketball" id="basketball"></label><br>
+				<label for="tennis">Tennis: <input type="checkbox" name="tennis"
+					id="tennis"></label>
+			</div>
+		</fieldset>
+		    <br>
+<!--Website-->
+			<div>
+				<label>Website:<input type="url" name="ur" id="ur" placeholder="Website Url"></label>
+			</div>
+			<br>
+<!--Buttons-->
+			<div>
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</div>
+			</form>
+		</section>
+	</body>
+</html>
+
