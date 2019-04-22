@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Adventure Company</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+</head>
+<body>
+	<header class="site-header" id="main-header">
+		<div class="top-header">
+			<div class="logo-container">
+				<img src="img/adventure.jpg" class="logo" alt=" globe logo" width= "200" height= "150">
+			</div>
+		</div>
+		<div class="menu">
+			<nav class="top-nav-container">
+				<ul class="top-nav clearfix">
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="schedule.html">Schedule</a>
+					</li>
+					<li>
+						<a href="Portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main-clearfix" id="main">
+		<section class="main-site-content">
+			<h1>About</h1>
+			<article class="main-content">
+				<p><img class="img-1" src="img/bigben.jpg" alt="Image 1" width="300" height="225">Pommy ipsum alright geezer upper class in the jacksy copper real ale, manky it's spitting nosh pillock goggledegook. Shakespeare bent as a nine bob note a comely wench Big Ben munta teacakes Dr. Watson, god save the queen doofer clock round the earhole therewith lost the plot. Blighty pompous collywobbles spam fritters bloke munta, absolute blummin' drizzle. Bag egg's old boy devonshire cream tea Big Ben flabbergasted what a mug one off throw a paddy, a reet bobbydazzler naff off ridicule skive. Splendid Moriarty it's nicked absobloodylootely anorak copper a cracking, bottled it baffled wind up apple and pears.</p>
+				<br>
+				<p>Got a lot of brass bog off owt stiff upper lip, a comely wench chav bent as a nine bob note, nuthouse fish and chips. Naff off nosh football picalilly muck about bowler hat, hard cheese old boy pennyboy it's the dogs bollocks cottage pie, it's me peepers barmy god save the queen cheesed off. Double dutch gob double dutch you mean it ain't me noggin' Moriarty 'ar kid, Amelia Pond therewith pants squiffy, wind up well chuffed stew and dumps corgi. A bit miffed challenge you to a duel pot noodle up at the crack of dawn, supper eton mess, collywobbles scones.</p>
+			</article>
+				
+		</section>
+		<section class="col-table-container" id="table">
+			<h2>Schedule</h2>
+			<div class="schedule-table">
+					<table>
+						<thead>
+							<tr>
+								<th>Time</th>
+								<th>Monday</th>
+								<th>Tuesday</th>
+								<th>Wednesday</th>
+								<th>Thursday</th>
+								<th>Friday</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>8:00-11:00</td>
+								<td>Bus Tour of the city</td>
+								<td>The London Eye</td>
+								<td>The Shard</td>
+								<td>Regent Park</td>
+								<td>Hyde Park</td>
+
+							</tr>
+							<tr>
+								<td>11:00-12:30</td>
+								<td>Lunch</td>
+								<td>Lunch</td>
+								<td>Lunch</td>
+								<td>Lunch</td>
+								<td>Lunch</td>
+							</tr>
+							<tr>
+								<td>12:00-18:00</td>
+								<td>Westminister Abby</td>
+								<td>The V&A</td>
+								<td>The Natural History Museum</td>
+								<td>Harrods</td>
+								<td>The British Museum</td>
+							</tr>
+							<tr>
+								<td>18:00-20:00</td>
+								<td>Dinner</td>
+								<td>Dinner</td>
+								<td>Dinner</td>
+								<td>Dinner</td>
+								<td>Dinner</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+		</section>
+		<section class="col-form" id="form">
+			<h3>Edit Profile</h3>
+			<h4>Profile Info</h4>
+			<form id="htmlForm" action="somephppage.php" method="get">
+			<div class="wrapper">
+				<div id="name-conintainer" class="form-elm">
+					<label for="name">Name</label> 
+					<input type="text" name="firstname" id="firstname" placeholder="FirstName" required="firstname"> 
+				</div>
+				<br>
+				<div id="email-container" class="form-elm">
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email" placeholder="Email" readonly>
+				</div>
+				<br>
+				<div id="address-container" class="form-elm">
+					<label for="streetaddress">Street Address</label>
+					<input type="text" name="streetaddress" id="streetaddress">
+				</div>
+				<br>
+				<div id="province-drop-container" class="form-elm">
+					<label for="province">Province</label>
+					<select name="province" id="province">
+						<optgroup label="province">
+							<option value="on" selected>Ontario</option>
+							<option value="qu">Quebec</option>
+							<option value="al">Alberta</option>
+							<option value="bc">British Columbia</option>
+							<option value="ma">Manitiba</option>
+							<option value="ne">New Brunswick</option>
+							<option value="ne">Newfoundland and Labrador</option>
+							<option value="no">Northwest Territories</option>
+							<option value="pi">Prince Edward Island</option>
+							<option value="sa">Saskatchewan</option>
+							<option value="no">Nova Scotia</option>
+							<option value="nu">Nunvut</option>
+							<option value="yu">Yukon</option>
+						</optgroup>
+					</select>
+				</div>
+				<br>
+				<div id="postal-code-container" class="form-elm">
+					<label for="postalcode">Postal Code</label>
+					<input type="text" name="postalcode" id="postalcode"
+					placeholder="PostalCode">
+				</div> 
+				<br>
+				<div class= "submit-button" id="button">
+				<button type="submit">SUBMIT</button>
+				</div>
+			</div>
+			</form>
+			<aside class="profile">
+				<div id="profile-info">
+					<i class="fas fa-user-circle" style="font-size: 95px"></i>
+					<p>John Doe</p>
+					<p>JohnDoe@algonquincollege.com<br>1385Wooddroffe Ave, Nepean<br>ON, K2G 1V8</p>
+					<i class="far fa-envelope" style="font-size: 30px"></i>
+				</div>
+			</aside>
+		</section>
+	</main>
+		<footer class="footer">
+		<div class="footer">
+			<h5>QUICK LINKS</h5>
+			<nav class="col-footer-menu">
+				<ul class="footer-nav-clearfix">
+					<li>
+						<a href="schedule.html">SCHEDULE</a>
+					</li>
+					<li>
+						<a href="about.html">ABOUT</a>
+					</li>
+					<li>
+						<a href="portfolio.html">PORTFOLIO</a>
+					</li>
+					<li>
+						<a href="contact.html">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
+			<h5>FOLLOW US</h5>
+			<nav class="social-icons">
+				<ul class="social-icons">
+				<li>
+					<a href="https://facebook.com"><img src="img/facebook.png" alt="facebook"></a>
+				</li>
+				<li>
+					<a href="https://youtube.com"><img src="img/youtube.png" alt="youtube"></a>
+				</li>
+				<li>
+					<a href="https://twitter.com"><img src="img/twitter.png" alt="twitter"></a>
+				</li>
+				</ul>
+			</nav>
+
+			<h6>ADDRESS</h6>
+			<p>1385 Woodroffe Ave.<br>Nepean, ON K2G<br>1V8<br>Canada</p>
+		</div>
+		</footer>
+</body>
+</html>
+
